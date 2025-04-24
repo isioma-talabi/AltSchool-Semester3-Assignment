@@ -1,0 +1,20 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #699f3a;
+  --secondary-color-one: #d6a83a;
+  --secondary-color-two: #da6a35;
+  --heading-font: "Henny Penny", sans-serif;
+  --body-font: "Lato", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 10px;
+  background-color: var(--primary-color);
+  font-family: var(--body-font);
+}
