@@ -1,6 +1,6 @@
 # Kasuwa- A Grocery Todo-List Web Application
 
-This project is my submission for the Altschool Karatu session, semester 2 examination for the Frontend Engineering track. The todo list web application was built with Vite, React, Vanilla CSS and Javascript. It was designed to fetch and display static information from a [JSONPlaceholder](https://jsonplaceholder.typicode.com/todos) and contains features such as pagination, search and filter, and the ability to view detailed description of each todo item. The application is hosted on Vercel.
+This project is my submission for the Altschool Karatu session, semester 3 assignment for the Frontend Engineering track. The todo list web application was built with Vite, Vue, Vanilla CSS and Javascript. It was designed to fetch and display static information from a [JSONPlaceholder](https://jsonplaceholder.typicode.com/todos) and contains features such as pagination, search and filter, and the ability to view detailed description of each todo item. The application is hosted on Vercel.
 
 ## Features
 
@@ -46,9 +46,9 @@ CRUD functionalities have been included in this application.
 ## Technologies Used 
 
 * Vite: A modern build tool for React applications.
-* ReactJS: A JavaScript library for building user interfaces.
+* Vue: A JavaScript framework for building user interfaces.
 * Vanilla CSS: Regular CSS that is written without any pre-processors like SASS or LESS, and without any frameworks or libraries. Because it is fun! Hahaha.
 
 ## Deployment
 
-The application is hosted on Vercel and can be accessed at: [https://altschool-semester2-exams.vercel.app/](https://altschool-semester2-exams.vercel.app/)
+The application is hosted on Vercel and can be accessed at: [https://altschool-semester2-exams.vercel.app/](https://alt-school-semester3-assignment.vercel.app/)
