@@ -51,4 +51,4 @@ CRUD functionalities have been included in this application.
 
 ## Deployment
 
-The application is hosted on Vercel and can be accessed at: [https://altschool-semester2-exams.vercel.app/](https://alt-school-semester3-assignment.vercel.app/)
+The application is hosted on Vercel and can be accessed at: [https://alt-school-semester3-assignment.vercel.app/](https://alt-school-semester3-assignment.vercel.app/)
