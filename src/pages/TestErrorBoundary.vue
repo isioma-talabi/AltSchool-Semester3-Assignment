@@ -6,23 +6,36 @@
       :src="errorBoundaryImage"
       alt="Error Boundary Image"
     />
-    <p class="error-boundary-text">Oh, oh. Something does not seem right...</p>
-    <button class="error-boundary-button" @click="triggerError">
+    <p class="error-boundary-text">
+      Oh, oh. Something does not seem right...
+    </p>
+    <button
+      class="error-boundary-button"
+      @click="triggerError"
+    >
       Do Not Press the Spoil Button
     </button>
   </div>
 </template>
 
 <script setup>
-import { ref } from "vue";
-import errorBoundaryImage from "../assets/ErrorBoundaryImage.png";
+import { ref } from 'vue'
+import { useRouter } from 'vue-router'
+import errorBoundaryImage from '../assets/ErrorBoundaryImage.png'
 
-const error = ref(false);
+const router = useRouter()
+const error = ref(false)
 
 const triggerError = () => {
-  throw new Error("This is a test error for the Error Boundary.");
-};
+  
+  router.push({
+    path: '/error',
+    query: { message: 'This is a test error for the Error Boundary.' }
+  })
+}
 </script>
+
+<!-- Styles -->
 
 <style scoped>
 .error-boundary-header {

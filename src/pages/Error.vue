@@ -1,10 +1,5 @@
 <template>
   <article class="error-container">
-    file="src/pages/Error.vue" type="vue"
-  </article>
-
-
-  <article class="error-container">
     <div class="error-image">
       <img :src="errorImage" alt="An image showing a 404 error" />
     </div>
@@ -24,16 +19,23 @@
 
 <script setup>
 import { computed } from "vue";
-import { useRouter } from "vue-router";
+import { useRoute } from "vue-router";
 import errorImage from "../assets/ErrorImage.png";
 
-const router = useRouter();
+const route = useRoute();
+
 const errorMessage = computed(() => {
-  return router.currentRoute.value.params.pathMatch
+  if (route.query.message) {
+    return route.query.message;
+  }
+
+  return route.params.pathMatch
     ? "This page doesn't exist or has been removed."
     : "An unexpected error occurred.";
 });
 </script>
+
+<!-- Styles -->
 
 <style scoped>
 .error-container {
@@ -89,12 +91,22 @@ const errorMessage = computed(() => {
   border-radius: 30px;
   width: 220px;
   height: 60px;
-  font-weight: 400;
+  font-weight: 500;
   margin: 0px auto;
   display: block;
   margin-top: 80px;
   cursor: pointer;
   outline: none;
+  font-size: 16px;
+}
+
+.error-button:hover {
+  background-color: black;
+  color: white;
+}
+
+a {
+  text-decoration: none;
 }
 
 @media screen and (max-width: 500px) {

@@ -402,6 +402,11 @@ button {
   font-family: "Poppins", sans-serif;
   font-size: 16px;
   color: whitesmoke;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--secondary-color-one);
 }
 
 .button-container {
